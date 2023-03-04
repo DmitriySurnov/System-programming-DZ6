@@ -5,3 +5,10 @@ D:\Системное программирование\DZ_6\DZ_6\obj\Debug\DZ_6.
 D:\Системное программирование\DZ_6\DZ_6\obj\Debug\DZ_6.csproj.CoreCompileInputs.cache
 D:\Системное программирование\DZ_6\DZ_6\obj\Debug\DZ_6.exe
 D:\Системное программирование\DZ_6\DZ_6\obj\Debug\DZ_6.pdb
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\obj\Debug\DZ_6.csprojAssemblyReference.cache
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\obj\Debug\DZ_6.csproj.CoreCompileInputs.cache
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\obj\Debug\DZ_6.exe
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\obj\Debug\DZ_6.pdb
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\bin\Debug\DZ_6.exe.config
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\bin\Debug\DZ_6.exe
+D:\Системное программирование\git\System-programming-DZ6\DZ_6\bin\Debug\DZ_6.pdb

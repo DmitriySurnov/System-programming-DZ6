@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace DZ_6
 {
@@ -11,6 +12,8 @@ namespace DZ_6
             ClassEvents ob2 = new ClassEvents(2);
             ClassEvents ob3 = new ClassEvents(3);
 
+            Exit();
+
             mySender.Event2 += ob1.Event2;
             mySender.Event3 += ob1.Event3;
             mySender.Event3 += ob2.Event3;
@@ -18,5 +21,20 @@ namespace DZ_6
             mySender.Event4 += ob1.Event4;
             mySender.Start();
         }
+        private static async void Exit()
+        {
+            await Task.Run(() =>
+            {
+                ConsoleKeyInfo keyInfo;
+                do
+                {
+                    keyInfo = Console.ReadKey();
+                } while (keyInfo.Key != ConsoleKey.Enter);
+            });
+            Environment.Exit(0);
+        }
+
     }
+
+
 }
