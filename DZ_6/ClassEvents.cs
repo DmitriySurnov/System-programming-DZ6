@@ -6,6 +6,7 @@ namespace DZ_6
     internal class ClassEvents
     {
         private readonly int _id;
+
         public ClassEvents(int id)
         {
             _id = id;
@@ -13,18 +14,18 @@ namespace DZ_6
 
         public void Event2()
         {
-            Console.WriteLine("Event 2 принят");
+            Program.Message.AddMessage("Event 2 принят");
         }
 
         public void Event3()
         {
-            Console.WriteLine($"Event 3 принят классом с ID {_id}");
+            Program.Message.AddMessage($"Event 3 принят классом с ID {_id}");
         }
 
         public void Event4()
         {
-            Console.WriteLine("Event 4 ...");
-            Thread.CurrentThread.Join();
+            //Program.Message.AddMessage("Event 4 ...");
+            //Thread.CurrentThread.Join();
         }
     }
 }

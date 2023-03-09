@@ -12,12 +12,36 @@ namespace DZ_6
         public event EventHandler Event3;
         public event EventHandler Event4;
 
+        private bool _isRunning;
+        private Thread _eventThread;
+
+        public EventSender()
+        {
+            _isRunning = false;
+            _eventThread = new Thread(CallEvent);
+        }
+
         public void Start()
         {
+            if (_isRunning)
+            {
+                return;
+            }
+            _isRunning = true;
+            _eventThread.Start();
+        }
+        public void Stop()
+        {
+            _isRunning = false;
+        }
+
+        private void CallEvent()
+        {
             Random random = new Random();
-            while (true)
+            while (_isRunning)
             {
                 int numberEvent = random.Next(1, 5);
+                Console.WriteLine(numberEvent);
                 switch (numberEvent)
                 {
                     case 1:
